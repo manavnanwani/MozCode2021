@@ -160,18 +160,18 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/MFC-VIT/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/MFC-VIT/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/MFC-VIT/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/MFC-VIT/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/MFC-VIT/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/MFC-VIT/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/MFC-VIT/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/MFC-VIT/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/MFC-VIT/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/MFC-VIT/repo_name/blob/master/LICENSE.txt
-[made-with-shield]: https://img.shields.io/github/languages/top/MFC-VIT/repo_name?style=for-the-badge
-[made-with-url]: https://shields.io/github/languages/top/MFC-VIT/repo_name.svg?style-for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/MFC-VIT/MozCode2021.svg?style=for-the-badge
+[contributors-url]: https://github.com/MFC-VIT/MozCode2021/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/MFC-VIT/MozCode2021.svg?style=for-the-badge
+[forks-url]: https://github.com/MFC-VIT/MozCode2021/network/members
+[stars-shield]: https://img.shields.io/github/stars/MFC-VIT/MozCode2021.svg?style=for-the-badge
+[stars-url]: https://github.com/MFC-VIT/MozCode2021/stargazers
+[issues-shield]: https://img.shields.io/github/issues/MFC-VIT/MozCode2021.svg?style=for-the-badge
+[issues-url]: https://github.com/MFC-VIT/MozCode2021/issues
+[license-shield]: https://img.shields.io/github/license/MFC-VIT/MozCode2021.svg?style=for-the-badge
+[license-url]: https://github.com/MFC-VIT/MozCode2021/blob/master/LICENSE.txt
+[made-with-shield]: https://img.shields.io/github/languages/top/MFC-VIT/MozCode2021?style=for-the-badge
+[made-with-url]: https://shields.io/github/languages/top/MFC-VIT/MozCode2021.svg?style-for-the-badge
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/company/mozilla-firefox-club-vit/mycompany/
 [product-screenshot]: images/screenshot.png
