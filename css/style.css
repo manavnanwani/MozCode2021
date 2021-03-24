@@ -4002,7 +4002,6 @@ ul.pagination .active a {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
   }
 
   .banner .block img {
@@ -4024,19 +4023,19 @@ ul.pagination .active a {
   .wave3 {
     width: 450px;
     height: 485px;
-    top: -120% !important;
-    left: -15% !important;
+    top: -140% !important;
+
+
   }
 }
 
 @media only screen and (max-width: 600px){
   .wave1{
-    bottom: -30% !important;
-    right: -35% !important;
-    display: none;
+    bottom: -70% !important;
+    right: -85% !important;
   }
   .wave3{
-    top: -90% !important;
+    top: -110% !important;
     left: -25% !important;
   }
 }
