@@ -262,7 +262,7 @@ button:hover {
   /* background: url(../images/background/homepage-one-banner.jpg) no-repeat; */
   background-color: #fff;
   overflow: hidden;
-  height: 100vh;
+  height: 90vh;
   /* background-size: cover; */
   /* background-position: center center; */
 }
@@ -3958,8 +3958,8 @@ ul.pagination .active a {
   width: 750px;
   height: 775px;
   position: absolute;
-  bottom: -25%;
-  right: -40%;
+  bottom: -35%;
+  right: -50%;
   margin-left: -100px;
   margin-bottom: -500px;
   border-radius: 35%;
@@ -3971,8 +3971,8 @@ ul.pagination .active a {
   width: 600px;
   height: 625px;
   position: absolute;
-  bottom: -15%;
-  left: -25%;
+  bottom: -25%;
+  left: -30%;
   margin-left: -100px;
   margin-bottom: -500px;
   border-radius: 35%;
@@ -3983,7 +3983,7 @@ ul.pagination .active a {
   width: 400px;
   height: 425px;
   position: absolute;
-  top: -85%;
+  top: -100%;
   left: 5%;
   margin-left: -100px;
   margin-bottom: -500px;
@@ -3997,11 +3997,16 @@ ul.pagination .active a {
 }
 
 
-@media screen and (max-width: 900px) and (min-width: 500px), (max-height: 1050px) {
+@media only screen and (max-width: 900px){
   .banner {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .banner .block img {
+    width: 450px !important;
+    margin: 30px 0px;
   }
 
   .wave2 {
@@ -4011,26 +4016,43 @@ ul.pagination .active a {
   .wave1 {
     width: 750px;
     height: 775px;
-    bottom: -75%;
-    right: -35%;
+    bottom: -65% !important;
+    right: -71% !important;
   }
 
   .wave3 {
     width: 450px;
     height: 485px;
-    top: -130%;
-    left: -5%;
+    top: -140% !important;
+    left: -15% !important;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .wave1{
+    bottom: -70% !important;
+    right: -85% !important;
+  }
+  .wave3{
+    top: -110% !important;
+    left: -25% !important;
   }
 }
 
 @media only screen and (max-width: 500px) {
+
+  .bg-banner-one{
+    height: 75vh;
+  }
+
   .banner .block img {
     width: 85vw !important;
     margin: 30px 0px;
   }
 
   .banner {
-    padding: 80px 0 11vh;
+    padding-top: 80px;
+    padding-bottom: 0px !important;
     position: relative;
     text-align: center;
   }
@@ -4039,10 +4061,47 @@ ul.pagination .active a {
     display: none;
   }
 
-  .wave2 {
+  /* .wave2 {
+    display: block !important;
     width: 400px;
     height: 425px;
     bottom: 10%;
     left: 30%;
+  } */
+
+  .wave3{
+    top: -110% !important;
+    left: -5% !important;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .wave1{
+    /* width: 750px;
+    height: 775px; */
+    bottom: -70%;
+    right: -65%;
+  }
+  .wave3 {
+    /* width: 450px;
+    height: 485px; */
+    top: -110%;
+    left: -5%;
+  }
+
+  .wave2{
+    bottom: -35%;
+    left: -40%;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .wave1{
+    bottom: -85%;
+    right: -90%;
+  }
+  .wave2{
+    bottom: -45%;
+    left: -50%;
   }
 }
