@@ -3032,14 +3032,6 @@ select.form-control:not([size]):not([multiple]) {
 
 /* Container
 ---------------------------------------------------------------------- */
-.gallery-wrapper {
-  /* Target Elements
-    ---------------------------------------------------------------------- */
-  /* Grid Breakpoints
-    ---------------------------------------------------------------------- */
-  /* 2 Columns */
-  /* 3 Columns */
-}
 
 .gallery-wrapper .gallery-item {
   padding: 15px;
@@ -4047,7 +4039,7 @@ ul.pagination .active a {
   .wave3 {
     width: 450px;
     height: 485px;
-    top: -120% !important;
+    top: -130% !important;
   }
 }
 
@@ -4096,15 +4088,25 @@ ul.pagination .active a {
     left: -5% !important;
   }
 }
+
 @media only screen and (max-width: 320px) {
-  .timer {
-    width: 95vw;
+  .syotimer__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.8);
   }
+
   .bg-banner-one {
     height: 120vh;
   }
   .collapse .navbar-nav .nav-item .nav-link {
     font-size: 12px;
+  }
+
+  .wave3 {
+    top: -120% !important;
+    left: -10% !important;
   }
 }
 
@@ -4125,7 +4127,7 @@ ul.pagination .active a {
     /* width: 450px;
     height: 485px; */
     top: -110%;
-    left: -5%;
+    left: -22%;
   }
 
   .wave2 {
