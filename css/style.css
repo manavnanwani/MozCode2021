@@ -623,7 +623,10 @@ select.form-control:not([size]):not([multiple]) {
 
 @media (max-width: 1200px) {
   .main-nav .navbar-brand {
-    padding: 20px 30px;
+    /* padding: 20px 30px; */
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 16px;
   }
 }
 
