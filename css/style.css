@@ -23,6 +23,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.body-wrapper {
+  overflow-x: hidden !important;
+}
+
 h1,
 h2,
 h3,
@@ -3958,11 +3962,12 @@ ul.pagination .active a {
 }
 
 .wave1 {
-  width: 750px;
-  height: 775px;
-  position: absolute;
-  bottom: -35%;
-  right: -50%;
+  position: relative;
+  top: -450px;
+  width: 650px;
+  height: 630px;
+  right: -88%;
+  bottom: 0px;
   margin-left: -100px;
   margin-bottom: -500px;
   border-radius: 35%;
@@ -3976,15 +3981,16 @@ ul.pagination .active a {
     rgba(251, 121, 41, 0.5635387944240196) 24%,
     rgba(140, 82, 255, 0.9192810913427871) 71%
   );
-  width: 600px;
-  height: 625px;
+  width: 450px;
+  height: 475px;
   position: absolute;
-  bottom: -25%;
-  left: -30%;
+  bottom: 35%;
+  left: -8%;
   margin-left: -100px;
   margin-bottom: -500px;
   border-radius: 35%;
   animation: wave 15s infinite linear;
+  z-index: 100;
 }
 
 .wave3 {
@@ -4118,10 +4124,10 @@ ul.pagination .active a {
 
 @media only screen and (max-width: 1200px) {
   .wave1 {
-    /* width: 750px;
-    height: 775px; */
-    bottom: -70%;
-    right: -65%;
+    width: 200px;
+    height: 175px;
+    bottom: 10%;
+    right: 10%;
   }
   .wave3 {
     /* width: 450px;
@@ -4131,8 +4137,8 @@ ul.pagination .active a {
   }
 
   .wave2 {
-    bottom: -35%;
-    left: -40%;
+    bottom: 35%;
+    left: -20%;
   }
 }
 
