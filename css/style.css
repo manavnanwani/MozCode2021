@@ -3950,16 +3950,21 @@ ul.pagination .active a {
 
 /*# sourceMappingURL=style.css.map */
 
+#mozilla{
+  overflow: hidden;
+  position: relative;
+}
+
 .wave1,.wave2,.wave3{
   background: rgb(251,121,41);
   background: linear-gradient(90deg, rgba(251,121,41,0.8184407552083334) 0%, rgba(251,121,41,0.5635387944240196) 24%, rgba(140,82,255,0.9192810913427871) 71%);
 }
 
 .wave1 {
-  width: 550px;
-  height: 575px;
+  width: 450px;
+  height: 475px;
   position: absolute;
-  bottom: 20%;
+  bottom: 70%;
   right: -20%;
   margin-left: -100px;
   margin-bottom: -500px;
@@ -4009,22 +4014,23 @@ ul.pagination .active a {
   }
 
   .banner {
-    padding-top: 80px;
+    padding-top: 0px;
     padding-bottom: 0px !important;
     position: relative;
     text-align: center;
+    margin-top: -20px;
   }
 
   .wave1 {
     display: block !important;
-    bottom: -140% !important;
+    bottom: -70% !important;
     right: -80% !important;
   }
 
   .wave2 {
     display: block !important;
     top: 90% !important;
-    left: 30% !important;
+    left: -30% !important;
   }
 
   .wave3{
@@ -4036,10 +4042,10 @@ ul.pagination .active a {
 
 @media only screen and (max-width: 500px){
   .wave1{
-    bottom: -130% !important;
-    right: -45% !important;
-    width: 300px;
-    height: 325px;
+    bottom: 80% !important;
+    right: -55% !important;
+    width: 250px;
+    height: 275px;
   }
   .wave2 {
     display: block !important;
@@ -4070,8 +4076,8 @@ ul.pagination .active a {
 
   .wave1 {
     display: block;
-    bottom: -75%;
-    right: -50%;
+    bottom: 65%;
+    right: -40%;
   }
 
   .wave2 {
@@ -4095,15 +4101,15 @@ ul.pagination .active a {
     min-height: 100vh;
   }
   .wave1{
-    bottom: 30%;
-    right: -35%;
+    bottom: 54%;
+    right: -25%;
   }
   .wave3 {
     top: -170%;
     left: -5%;
   }
   .wave2{
-    bottom: -35%;
-    left: -40%;
+    bottom: 15%;
+    left: -10%;
   }
 }
