@@ -15,6 +15,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700");
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -232,7 +233,6 @@ ul.pagination .active a,
 
 span.alternate {
   color: #ff6600;
-  font-style: italic;
   font-weight: 400;
 }
 
@@ -280,7 +280,7 @@ button:hover {
 }
 
 .bg-about {
-  background: url(../images/background/pattern-background.jpg) no-repeat;
+  /* background: url(../images/background/pattern-background.jpg) no-repeat; */
   background-size: cover;
 }
 
@@ -1296,14 +1296,6 @@ select.form-control:not([size]):not([multiple]) {
   margin-bottom: 35px;
 }
 
-.about .content-block h2:after {
-  content: "";
-  width: 60px;
-  height: 3px;
-  background: #ff6600;
-  display: block;
-  margin-top: 10px;
-}
 
 @media (max-width: 767px) {
   .about .content-block h2:after {
@@ -3964,7 +3956,7 @@ ul.pagination .active a {
   width: 450px;
   height: 475px;
   position: absolute;
-  bottom: 70%;
+  bottom: 74%;
   right: -20%;
   margin-left: -100px;
   margin-bottom: -500px;
@@ -3977,7 +3969,7 @@ ul.pagination .active a {
   width: 400px;
   height: 425px;
   position: absolute;
-  bottom: 30%;
+  bottom: 15%;
   left: -10%;
   margin-left: -100px;
   margin-bottom: -500px;
@@ -4002,6 +3994,10 @@ ul.pagination .active a {
   from { transform: rotate(360deg);}
 }
 
+
+.about-content{
+  padding: 40px;
+}
 
 
 
@@ -4042,14 +4038,14 @@ ul.pagination .active a {
 
 @media only screen and (max-width: 500px){
   .wave1{
-    bottom: 80% !important;
+    bottom: 84% !important;
     right: -55% !important;
     width: 250px;
     height: 275px;
   }
   .wave2 {
     display: block !important;
-    top: 90% !important;
+    top: 95% !important;
     left: -30% !important;
     width: 300px;
     height: 325px;
@@ -4059,6 +4055,13 @@ ul.pagination .active a {
     left: -15% !important;
     width: 250px;
     height: 275px;
+  }
+  .about-content{
+    padding: 20px;
+  }
+  .alternate{
+    display: inline-block;
+    font-size: 3rem;
   }
 }
 
