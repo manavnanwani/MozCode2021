@@ -15,6 +15,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700");
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -232,7 +233,6 @@ ul.pagination .active a,
 
 span.alternate {
   color: #ff6600;
-  font-style: italic;
   font-weight: 400;
 }
 
@@ -260,9 +260,9 @@ button:hover {
 
 .bg-banner-one {
   /* background: url(../images/background/homepage-one-banner.jpg) no-repeat; */
-  background-color: #fff;
+  background-color: transparent;
   overflow: hidden;
-  height: 90vh;
+  min-height: 100vh;
   /* background-size: cover; */
   /* background-position: center center; */
 }
@@ -280,12 +280,13 @@ button:hover {
 }
 
 .bg-about {
-  background: url(../images/background/pattern-background.jpg) no-repeat;
+  /* background: url(../images/background/pattern-background.jpg) no-repeat; */
   background-size: cover;
 }
 
 .bg-speaker {
-  background: url(../images/background/spaeker-background.jpg) fixed no-repeat;
+  /* background: url(../images/background/spaeker-background.jpg) fixed no-repeat; */
+ background: black;
   background-size: cover;
   background-position: center center;
 }
@@ -587,15 +588,15 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .btn-white-md {
-  background: #fff;
+  background: transparent;
   color: #222222;
   padding: 15px 40px;
-  border: 2px solid #ff6600;
+  border: 1px solid rgba(140,82,255,0.9192810913427871);
   border-radius: 8px;
 }
 
 .btn-white-md:hover {
-  background: #ff6600;
+  background: rgba(140,82,255,0.9192810913427871);
   color: #fff;
 }
 
@@ -1295,14 +1296,6 @@ select.form-control:not([size]):not([multiple]) {
   margin-bottom: 35px;
 }
 
-.about .content-block h2:after {
-  content: "";
-  width: 60px;
-  height: 3px;
-  background: #ff6600;
-  display: block;
-  margin-top: 10px;
-}
 
 @media (max-width: 767px) {
   .about .content-block h2:after {
@@ -3949,17 +3942,22 @@ ul.pagination .active a {
 
 /*# sourceMappingURL=style.css.map */
 
+#mozilla{
+  overflow: hidden;
+  position: relative;
+}
+
 .wave1,.wave2,.wave3{
   background: rgb(251,121,41);
   background: linear-gradient(90deg, rgba(251,121,41,0.8184407552083334) 0%, rgba(251,121,41,0.5635387944240196) 24%, rgba(140,82,255,0.9192810913427871) 71%);
 }
 
 .wave1 {
-  width: 750px;
-  height: 775px;
+  width: 450px;
+  height: 475px;
   position: absolute;
-  bottom: -35%;
-  right: -50%;
+  bottom: 74%;
+  right: -20%;
   margin-left: -100px;
   margin-bottom: -500px;
   border-radius: 35%;
@@ -3968,11 +3966,11 @@ ul.pagination .active a {
 
 .wave2 {
   background: linear-gradient(-25deg, rgba(251,121,41,0.8184407552083334) 0%, rgba(251,121,41,0.5635387944240196) 24%, rgba(140,82,255,0.9192810913427871) 71%);
-  width: 600px;
-  height: 625px;
+  width: 400px;
+  height: 425px;
   position: absolute;
-  bottom: -25%;
-  left: -30%;
+  bottom: 15%;
+  left: -10%;
   margin-left: -100px;
   margin-bottom: -500px;
   border-radius: 35%;
@@ -3997,53 +3995,14 @@ ul.pagination .active a {
 }
 
 
-@media only screen and (max-width: 900px){
-  .banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-
-  .banner .block img {
-    width: 450px !important;
-    margin: 30px 0px;
-  }
-
-  .wave2 {
-    display: none;
-  }
-
-  .wave1 {
-    width: 750px;
-    height: 775px;
-    bottom: -65% !important;
-    right: -71% !important;
-  }
-
-  .wave3 {
-    width: 450px;
-    height: 485px;
-    top: -120% !important;
-  }
+.about-content{
+  padding: 40px;
 }
 
-@media only screen and (max-width: 600px){
-  .wave1{
-    bottom: -70% !important;
-    right: -85% !important;
-  }
-  .wave3{
-    top: -110% !important;
-    left: -25% !important;
-  }
-}
 
-@media only screen and (max-width: 500px) {
 
-  .bg-banner-one{
-    height: 75vh;
-  }
+@media only screen and (max-width: 700px) {
+
 
   .banner .block img {
     width: 85vw !important;
@@ -4051,23 +4010,24 @@ ul.pagination .active a {
   }
 
   .banner {
-    padding-top: 80px;
+    padding-top: 0px;
     padding-bottom: 0px !important;
     position: relative;
     text-align: center;
+    margin-top: -20px;
   }
 
   .wave1 {
-    display: none;
+    display: block !important;
+    bottom: -70% !important;
+    right: -80% !important;
   }
 
-  /* .wave2 {
+  .wave2 {
     display: block !important;
-    width: 400px;
-    height: 425px;
-    bottom: 10%;
-    left: 30%;
-  } */
+    top: 90% !important;
+    left: -30% !important;
+  }
 
   .wave3{
     top: -110% !important;
@@ -4075,33 +4035,84 @@ ul.pagination .active a {
   }
 }
 
-@media only screen and (max-width: 1200px){
-  .wave1{
-    /* width: 750px;
-    height: 775px; */
-    bottom: -70%;
-    right: -65%;
-  }
-  .wave3 {
-    /* width: 450px;
-    height: 485px; */
-    top: -110%;
-    left: -5%;
-  }
 
-  .wave2{
-    bottom: -35%;
-    left: -40%;
+@media only screen and (max-width: 500px){
+  .wave1{
+    bottom: 84% !important;
+    right: -55% !important;
+    width: 250px;
+    height: 275px;
+  }
+  .wave2 {
+    display: block !important;
+    top: 95% !important;
+    left: -30% !important;
+    width: 300px;
+    height: 325px;
+  }
+  .wave3{
+    top: -60% !important;
+    left: -15% !important;
+    width: 250px;
+    height: 275px;
+  }
+  .about-content{
+    padding: 20px;
+  }
+  .alternate{
+    display: inline-block;
+    font-size: 3rem;
   }
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 900px){
+  .banner .block img {
+    width: 350px !important;
+    margin: 30px 0px;
+  }
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .wave1 {
+    display: block;
+    bottom: 65%;
+    right: -40%;
+  }
+
+  .wave2 {
+    display: block;
+    top: 90% ;
+    left: -20% ;
+  }
+
+  .wave3{
+    top: -90%;
+    left: -20%;
+  }
+}
+
+
+@media only screen and (min-height: 1200px){
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
   .wave1{
-    bottom: -85%;
-    right: -90%;
+    bottom: 54%;
+    right: -25%;
+  }
+  .wave3 {
+    top: -170%;
+    left: -5%;
   }
   .wave2{
-    bottom: -45%;
-    left: -50%;
+    bottom: 15%;
+    left: -10%;
   }
 }
