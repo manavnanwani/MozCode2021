@@ -56,7 +56,7 @@
     // -----------------------------
     $('.timer').syotimer({
       year: 2021,
-      month: 12,
+      month: 5,
       day: 9,
       hour: 20,
       minute: 30
