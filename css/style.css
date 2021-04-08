@@ -233,7 +233,7 @@ ul.pagination .active a,
 
 span.alternate {
   color: #ff6600;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 a {
@@ -408,28 +408,24 @@ transition: all .5s ease-in-out;
     border-color: transparent 2px #020202 transparent transparent;
   }
 }
-.row{
-  align-items: center;
-  justify-content: center;
+.time{
+  text-align: center;
 }
+.icon{
+  font-size:40px;
+  margin: 20px auto;
+  padding :20px;
+  height: 80px;
+  width: 80px;
+  border:1px solid black;
+  border-radius: 50%;
+}
+/* .col-md-3:hover{
+  box-shadow: 5px 7px 9px -3px #ff6600;
+  cursor: pointer;
+} */
 
-  .time{
-    text-align: center;
-  }
-  .icon{
-    font-size:40px;
-    margin: 20px auto;
-    padding :20px;
-    height: 80px;
-    width: 80px;
-    border:1px solid black;
-    border-radius: 50%;
-  }
-  .col-md-3:hover{
-    box-shadow: 5px 7px 9px -3px #ff6600;
-    cursor: pointer;
-  }
-  
+
 
 
 
@@ -4309,7 +4305,7 @@ ul.pagination .active a {
   }
   .alternate{
     display: inline-block;
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 }
 
@@ -4469,4 +4465,15 @@ ul.pagination .active a {
   .answers p{
     font-size: 14px;
   }
+  .day-no p{
+    display: none;
+  }
+}
+
+
+.day-no{
+  max-width: 300px;
+}
+.day-no p{
+  color: black;
 }
