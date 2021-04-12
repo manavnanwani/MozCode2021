@@ -1,17 +1,4 @@
-/*
-THEME: Eventre - Event and Conference Html5 Template
-VERSION: 1.0.0
-AUTHOR: Themefisher
 
-HOMEPAGE: https://themefisher.com/products/eventre-event-conference-website-template/
-DEMO: https://demo.themefisher.com/eventre/
-GITHUB: https://github.com/themefisher/Eventre-Event-Conference-Template/
-
-WEBSITE: https://themefisher.com
-TWITTER: https://twitter.com/themefisher
-FACEBOOK: https://www.facebook.com/themefisher
-*/
-/*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700");
 html {
   font-size: 16px;
@@ -233,7 +220,7 @@ ul.pagination .active a,
 
 span.alternate {
   color: #ff6600;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 a {
@@ -301,10 +288,134 @@ button:hover {
   background-position: center center;
 }
 
-.bg-schedule {
+/*.bg-timeline {
   background: url(../images/background/schedule-bg.png) no-repeat;
   background-size: cover;
+}*/
+.timeline h3{
+  text-align: center;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
 }
+.timeline ul {
+  background: #ffffff;
+  padding: 50px 0;
+}
+.timeline ul li {
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: rgb(240, 240, 240);
+}
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+.timeline ul li div{
+  background-color:rgb(240, 240, 240);
+  border-style: solid;
+  border-width: thin;
+  border-radius: 15px;
+}
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+}
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+}
+.timeline ul li:nth-child(odd) div { left: 45px; }
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: 2px transparent #000000 transparent transparent;
+}
+.timeline ul li:nth-child(even) div { left: -439px; }
+
+.timeline ul li:nth-child(even) div::before {
+right: -15px;
+border-width: 8px 0 8px 16px;
+
+}
+time {
+  display: block;
+  font-size: 5px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.timeline ul li::after { transition: background .5s ease-in-out; }
+.timeline ul li.in-view::after { background: #ff6600; }
+
+.timeline ul li div {
+visibility:hidden;
+opacity:25%;
+transition: all .5s ease-in-out;
+}
+.timeline ul li:nth-child(odd) div { transform: translate3d(200px, 0, 0); }
+.timeline ul li:nth-child(even) div { transform: translate3d(-200px, 0, 0); }
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+@media screen and (max-width: 900px) {
+
+  .timeline ul li div { width: 250px; }
+
+  .timeline ul li:nth-child(even) div { left: -289px; /*250+45-6*/
+  }
+  }
+
+  @media screen and (max-width: 600px) {
+
+  .timeline ul li { margin-left: 20px; }
+
+  .timeline ul li div { width: calc(100vw - 91px); }
+
+  .timeline ul li:nth-child(even) div { left: 45px; }
+
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent 2px #020202 transparent transparent;
+  }
+}
+.time{
+  text-align: center;
+}
+.icon{
+  font-size:40px;
+  margin: 20px auto;
+  padding :20px;
+  height: 80px;
+  width: 80px;
+  border:1px solid black;
+  border-radius: 50%;
+}
+/* .col-md-3:hover{
+  box-shadow: 5px 7px 9px -3px #ff6600;
+  cursor: pointer;
+} */
+
+
+
+
+
 
 .bg-service {
   background: url(../images/background/feature-background.jpg) no-repeat;
@@ -1357,7 +1468,7 @@ select.form-control:not([size]):not([multiple]) {
 .our-team {
   padding: 30px 20px 80px;
   margin-bottom: 30px;
-  
+
   background-color: #f7f5ec;
   text-align: center;
   overflow: hidden;
@@ -1417,10 +1528,10 @@ select.form-control:not([size]):not([multiple]) {
   transform: scale(0.7);
 }
 .our-team .name {
-  
+
   font-size: 27px;
-  
-  
+
+
 }
 .our-team .title {
   display: block;
@@ -1617,7 +1728,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .schedule .schedule-tab ul li.nav-item a {
   font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 1.5rem;
   color: #ff6600;
   font-weight: 500;
@@ -1749,7 +1860,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .schedule .schedule-contents .schedule-item li.headings div {
   color: #fff;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: "Montserrat", sans-serif;
 }
 
@@ -1861,7 +1972,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .schedule.two .schedule-tab ul li.nav-item a {
   font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 20px;
   color: #222222;
   font-weight: 500;
@@ -3141,14 +3252,14 @@ select.form-control:not([size]):not([multiple]) {
 
 /* Container
 ---------------------------------------------------------------------- */
-.gallery-wrapper {
+/*.gallery-wrapper{
   /* Target Elements
     ---------------------------------------------------------------------- */
   /* Grid Breakpoints
     ---------------------------------------------------------------------- */
   /* 2 Columns */
   /* 3 Columns */
-}
+
 
 .gallery-wrapper .gallery-item {
   padding: 15px;
@@ -4181,7 +4292,7 @@ ul.pagination .active a {
   }
   .alternate{
     display: inline-block;
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 }
 
@@ -4253,7 +4364,7 @@ ul.pagination .active a {
   color:black;
   font-size: 50px;
   text-align: center;
-   
+
  }
 
 .centerplease {
@@ -4306,7 +4417,7 @@ ul.pagination .active a {
   z-index: 5;
   font-size: 2em;
   line-height: 100%;
-  -webkit-user-select: none;    
+  -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
@@ -4341,4 +4452,15 @@ ul.pagination .active a {
   .answers p{
     font-size: 14px;
   }
+  .day-no p{
+    display: none;
+  }
+}
+
+
+.day-no{
+  max-width: 300px;
+}
+.day-no p{
+  color: black;
 }
