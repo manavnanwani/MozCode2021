@@ -1,17 +1,4 @@
-/*
-THEME: Eventre - Event and Conference Html5 Template
-VERSION: 1.0.0
-AUTHOR: Themefisher
 
-HOMEPAGE: https://themefisher.com/products/eventre-event-conference-website-template/
-DEMO: https://demo.themefisher.com/eventre/
-GITHUB: https://github.com/themefisher/Eventre-Event-Conference-Template/
-
-WEBSITE: https://themefisher.com
-TWITTER: https://twitter.com/themefisher
-FACEBOOK: https://www.facebook.com/themefisher
-*/
-/*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700");
 html {
   font-size: 16px;
@@ -211,6 +198,21 @@ ul.pagination .active a,
   bottom: 0;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff6600;
+}
+
 .overlay-white-slant:before {
   content: "";
   width: 100%;
@@ -389,19 +391,19 @@ transition: all .5s ease-in-out;
 @media screen and (max-width: 900px) {
 
   .timeline ul li div { width: 250px; }
-  
+
   .timeline ul li:nth-child(even) div { left: -289px; /*250+45-6*/
   }
   }
-  
+
   @media screen and (max-width: 600px) {
-  
+
   .timeline ul li { margin-left: 20px; }
-  
+
   .timeline ul li div { width: calc(100vw - 91px); }
-  
+
   .timeline ul li:nth-child(even) div { left: 45px; }
-  
+
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
@@ -790,6 +792,10 @@ select.form-control:not([size]):not([multiple]) {
   }
 }
 
+.nav-link a:active{
+  color: #ff6600;
+}
+
 @media (max-width: 1200px) {
   .main-nav .navbar-nav .nav-item .nav-link {
     padding-left: 4px;
@@ -1053,7 +1059,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .footer-main {
   background: #272735;
-  padding: 90px 0;
+  padding: 55px 0;
 }
 
 @media (max-width: 767px) {
@@ -1481,7 +1487,7 @@ select.form-control:not([size]):not([multiple]) {
 .our-team {
   padding: 30px 20px 80px;
   margin-bottom: 30px;
-  
+
   background-color: #f7f5ec;
   text-align: center;
   overflow: hidden;
@@ -1502,7 +1508,7 @@ select.form-control:not([size]):not([multiple]) {
   width: 100%;
   height: 0;
   border-radius: 50%;
-  background-color: #f60;
+  background-color: #ff6600;
   position: absolute;
   bottom: 135%;
   right: 0;
@@ -1521,7 +1527,7 @@ select.form-control:not([size]):not([multiple]) {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #f60;
+  background-color: #ff6600;
   position: absolute;
   top: 0;
   left: 0;
@@ -1541,10 +1547,10 @@ select.form-control:not([size]):not([multiple]) {
   transform: scale(0.7);
 }
 .our-team .name {
-  
+
   font-size: 27px;
-  
-  
+
+
 }
 .our-team .title {
   display: block;
@@ -1557,7 +1563,7 @@ select.form-control:not([size]):not([multiple]) {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: #f60;
+  background-color: #ff6600;
   position: absolute;
   bottom: -100px;
   left: 0;
@@ -1722,6 +1728,10 @@ select.form-control:not([size]):not([multiple]) {
   margin-bottom: 5px;
 }
 */
+.schedule{
+  padding-top: 90px;
+}
+
 .schedule .schedule-tab {
   display: flex;
   justify-content: center;
@@ -1741,7 +1751,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .schedule .schedule-tab ul li.nav-item a {
   font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 1.5rem;
   color: #ff6600;
   font-weight: 500;
@@ -1873,7 +1883,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .schedule .schedule-contents .schedule-item li.headings div {
   color: #fff;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: "Montserrat", sans-serif;
 }
 
@@ -1985,7 +1995,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .schedule.two .schedule-tab ul li.nav-item a {
   font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 20px;
   color: #222222;
   font-weight: 500;
@@ -4368,7 +4378,7 @@ ul.pagination .active a {
   width: 80%;
   padding: 20px;
   margin: auto;
-  padding: 0 0 30px 0;
+  padding: 60px 0 60px 0;
 }
 .content h1 {
   padding: 20px 0;
@@ -4377,7 +4387,7 @@ ul.pagination .active a {
   color:black;
   font-size: 50px;
   text-align: center;
-   
+
  }
 
 .centerplease {
@@ -4387,7 +4397,7 @@ ul.pagination .active a {
 }
 
 .question {
-  color: #7552cc;
+  color: white;
   position: relative;
   background:  #fd8636;
   margin: 3px 0;
@@ -4430,7 +4440,7 @@ ul.pagination .active a {
   z-index: 5;
   font-size: 2em;
   line-height: 100%;
-  -webkit-user-select: none;    
+  -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
@@ -4476,4 +4486,78 @@ ul.pagination .active a {
 }
 .day-no p{
   color: black;
+}
+
+.footer-logo{
+  color: white !important;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+.footer-logo h1{
+  color: white;
+}
+
+.copyright-text p{
+  color: white;
+}
+
+.copyright-text #heart-icon{
+  color: red;
+}
+
+.copyright-text #MFC-VIT{
+  color: #ff6600;
+}
+
+.contacts{
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contacts .single-contact h4{
+  color: white !important;
+}
+
+@media only screen and (max-width : 700px){
+  .contacts{
+    flex-direction: column;
+  }
+  .contacts .single-contact{
+    margin: 20px 0px;
+  }
+}
+
+.social-icons{
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons .social-col{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.social-icons .social-col .social-icon a{
+  text-decoration: none !important;
+}
+
+.social-icons .social-col .social-icon a i{
+  font-size: 50px;
+  color: white;
+  margin: 0px 25px;
 }

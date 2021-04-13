@@ -1,6 +1,6 @@
 (function ($) {
   'use strict';
-    
+
   // navbarDropdown
   if ($(window).width() < 992) {
     $('.main-nav [data-toggle="dropdown"]').on('click', function () {
@@ -57,8 +57,8 @@
     $('.timer').syotimer({
       year: 2021,
       month: 5,
-      day: 9,
-      hour: 20,
+      day: 22,
+      hour: 18,
       minute: 30
     });
 
@@ -81,7 +81,7 @@
       fixedBgPos: true
 
     });
-    
+
     // gallery-wrapper init
     if (($('.gallery-wrapper').length) !== 0) {
       var Shuffle = window.Shuffle;
@@ -103,7 +103,7 @@
 })(jQuery);
 // define variables
 var items = document.querySelectorAll(".timeline li");
-  
+
 // check if an element is in viewport
 // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
 function isElementInViewport(el) {
@@ -127,4 +127,3 @@ function callbackFunc() {
 window.addEventListener("load", callbackFunc);
 window.addEventListener("resize", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
-
