@@ -235,7 +235,8 @@ ul.pagination .active a,
 
 span.alternate {
   color: #ff6600;
-  font-weight: 500;
+  font-weight: 800;
+  font-size: 2.5rem;
 }
 
 a {
@@ -289,7 +290,7 @@ button:hover {
 .bg-speaker {
 
   /* background:linear-gradient(rgba(255,255,255,0.5)) url(../images/speakers/speakerbgg.jpg) fixed no-repeat; */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url(../images/speakers/speakerbgg.jpg) ;
+  background-image: linear-gradient(160deg,rgba(156, 87, 221, 0.75), rgba(34, 19, 37, 0.75)),url(../images/speakers/speakerbgg.jpg) ;
  /* background: black; */
  background-repeat: no-repeat !important;
   background-size: cover;
@@ -335,17 +336,13 @@ button:hover {
   border-radius: 50%;
   background: inherit;
 }
-.timeline ul li div{
-  background-color:rgb(240, 240, 240);
-  border-style: solid;
-  border-width: thin;
-  border-radius: 15px;
-}
 .timeline ul li div {
   position: relative;
   bottom: 0;
   width: 400px;
-  padding: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
 }
 .timeline ul li div::before {
   content: '';
@@ -387,6 +384,7 @@ transition: all .5s ease-in-out;
   transform: none;
   visibility: visible;
   opacity: 1;
+  text-align: center;
 }
 @media screen and (max-width: 900px) {
 
@@ -721,14 +719,29 @@ select.form-control:not([size]):not([multiple]) {
   background: transparent;
   color: #222222;
   padding: 15px 40px;
-  border: 1px solid rgba(140,82,255,0.9192810913427871);
+  border: 2px solid rgba(140,82,255,0.9192810913427871);
   border-radius: 8px;
+  width: 300px;
 }
 
 .btn-white-md:hover {
   background: rgba(140,82,255,0.9192810913427871);
   color: #fff;
 }
+.btn-white-md1 {
+  background: transparent;
+  color: #222222;
+  padding: 15px 40px;
+  border: 2px solid #ff6600;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.btn-white-md1:hover {
+  background: #ff6600;
+  color: #fff;
+}
+
 
 .btn-rounded-icon {
   border-radius: 100px;
@@ -1058,13 +1071,14 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .footer-main {
-  background: #272735;
-  padding: 55px 0;
+  /* background: #2f065f; */
+  background-image: linear-gradient(135deg, #431972 0%, #1f0938 100%);
+  padding-top: 55px;
 }
 
 @media (max-width: 767px) {
   .footer-main {
-    padding: 50px 0;
+    padding-top: 50px;
   }
 }
 
@@ -1110,8 +1124,8 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .subfooter {
-  background: #2a2a37;
-  padding: 18px 0;
+  /* background: #140228; */
+  padding-bottom: 18px;
 }
 
 .subfooter .copyright-text p {
@@ -1387,8 +1401,8 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .about .image-block img {
-  border-radius: 100%;
-  box-shadow: 0px 0px 59px 0px rgba(11, 29, 66, 0.15);
+  /* border-radius: 100%; */
+  /* box-shadow: 0px 0px 59px 0px rgba(11, 29, 66, 0.15); */
 }
 
 @media (max-width: 767px) {
@@ -1416,9 +1430,9 @@ select.form-control:not([size]):not([multiple]) {
   }
 }
 
-.about .content-block {
+/* .about .content-block {
   margin-left: 15px;
-}
+} */
 
 @media (max-width: 767px) {
   .about .content-block {
@@ -1757,7 +1771,7 @@ select.form-control:not([size]):not([multiple]) {
   font-weight: 500;
   display: block;
   border-radius: 0;
-  border: 1px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
   padding: 20px 30px;
 }
 
@@ -4046,7 +4060,7 @@ ul.pagination .active a {
 }
 
 .about {
-  padding: 120px 0;
+  padding: 40px 0;
 }
 
 .testimonial .testimonial-item {
@@ -4211,11 +4225,11 @@ ul.pagination .active a {
   height: 475px;
   position: absolute;
   bottom: 76%;
-  right: -20%;
+  right: -16%;
   margin-left: -100px;
   margin-bottom: -500px;
   border-radius: 35%;
-  animation: wave 15s infinite linear;
+  animation: wave 25s infinite linear;
 }
 
 .wave2 {
@@ -4232,11 +4246,11 @@ ul.pagination .active a {
 }
 
 .wave3 {
-  width: 400px;
-  height: 425px;
+  width: 500px;
+  height: 525px;
   position: absolute;
-  top: -100%;
-  left: 5%;
+  top: -92%;
+  left: -32%;
   margin-left: -100px;
   margin-bottom: -500px;
   border-radius: 35%;
@@ -4299,13 +4313,13 @@ ul.pagination .active a {
   }
   .wave2 {
     display: block !important;
-    top: 99% !important;
+    top: 95% !important;
     left: -30% !important;
     width: 300px;
     height: 325px;
   }
   .wave3{
-    top: -60% !important;
+    top: -55% !important;
     left: -15% !important;
     width: 250px;
     height: 275px;
@@ -4316,6 +4330,12 @@ ul.pagination .active a {
   .alternate{
     display: inline-block;
     /* font-size: 3rem; */
+  }
+  .social-icons{
+    flex-direction: column !important;
+  }
+  .about-mozcode{
+    width: 100% !important;
   }
 }
 
@@ -4412,6 +4432,7 @@ ul.pagination .active a {
 .answers {
   font-weight:300;
   background: #f2f2f2;
+  color: white;
   padding: 0px 15px;
   margin: 3px 0;
   height: 0;
@@ -4435,6 +4456,8 @@ ul.pagination .active a {
 .plus {
   color:#fff;
   position: absolute;
+  top:0;
+  left:0;
   margin-left: 10px;
   margin-top: 5px;
   z-index: 5;
@@ -4451,7 +4474,7 @@ ul.pagination .active a {
   transition: .4s ease;
 }
 
-.questions:checked ~ .plus {
+.questions:checked ~ .question .plus {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -4482,7 +4505,7 @@ ul.pagination .active a {
 
 
 .day-no{
-  max-width: 300px;
+  min-width: 250px;
 }
 .day-no p{
   color: black;
@@ -4536,7 +4559,7 @@ ul.pagination .active a {
 .social-icons{
   padding: 30px 0px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -4546,7 +4569,6 @@ ul.pagination .active a {
   display: flex;
   flex-direction: row;
   margin-top: 30px;
-  width: 100%;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -4557,7 +4579,18 @@ ul.pagination .active a {
 }
 
 .social-icons .social-col .social-icon a i{
-  font-size: 50px;
+  font-size: 40px;
   color: white;
-  margin: 0px 25px;
+  width: 40px !important;
+  margin: 0 25px;
+}
+
+.day-no .active h3,.day-no .active h6{
+  color: white;
+}
+.day-no .active h3{
+  font-weight: 800;
+}
+.about-mozcode{
+  width: 105%;
 }
