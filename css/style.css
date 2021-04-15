@@ -4223,7 +4223,7 @@ ul.pagination .active a {
   width: 400px;
   height: 425px;
   position: absolute;
-  bottom: 15%;
+  bottom: 76%;
   left: -10%;
   margin-left: -100px;
   margin-bottom: -500px;
@@ -4299,7 +4299,7 @@ ul.pagination .active a {
   }
   .wave2 {
     display: block !important;
-    top: 95% !important;
+    top: 99% !important;
     left: -30% !important;
     width: 300px;
     height: 325px;
